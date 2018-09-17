@@ -26,6 +26,16 @@
 	<a href="" class="text">Music</a>
 	<a href="" class="text">技术支持</a>
 	<a href="" class="list" ><i class="icon iconfont icon-sousuo"></i></a>
+	<div class="headYC">
+		<ul>
+			<li>Mac</li>
+			<li>IPad</li>
+			<li>IPhone</li>
+			<li>Watch</li>
+			<li>Music</li>
+		</ul>
+	</div>
+
 </header>
 
 <div class="iphone">
@@ -164,5 +174,21 @@
 </body>
 </html>
 <script>
-
+	let head = $("header");
+	let headYC = $(".headYC");
+	let a = $("header .text")
+	head.mouseenter(function () {
+	    if (a.eq(1).css("display") == "block"){
+	        return
+		}
+	    // e.stop();
+		headYC.slideDown();
+    })
+    head.mouseleave(function () {
+        if (a.eq(1).css("display") == "block"){
+            return
+        }
+        // e.stop();
+        headYC.slideUp();
+    })
 </script>
