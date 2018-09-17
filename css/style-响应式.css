@@ -152,6 +152,9 @@ header a:hover{
 	position: relative;
 
 }
+.bfooter footer dl dt{
+	cursor: pointer;
+}
 .bfooter footer dl ul{
 	/*height: 0;*/
 	/*overflow: hidden;*/
@@ -183,7 +186,16 @@ header a:hover{
 .bfooter footer dl dd:hover{
 	text-decoration: underline;
 }
+.bfooter footer ul{
+	display: none;
+}
+.bfooter footer ul li{
+	font-size: 16px;
+	color: rgba(0,0,0,0.6);
+	padding: 5px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 
+}
 /* 底部小字 */
 
 .bfooter .footer{

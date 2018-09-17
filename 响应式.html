@@ -91,6 +91,12 @@
 			<dd class="yc">iPad touch</dd>
 			<dd class="yc">配件</dd>
 		</dl>
+		<ul>
+			<li>Mac</li>
+			<li>ipad</li>
+			<li>iphone</li>
+			<li>Watch</li>
+		</ul>
 		<dl class="dl">
 			<dt>Apple Store 商店</dt>
 
@@ -104,7 +110,14 @@
 			<dd class="yc">Apple GiveBack 回馈计划</dd>
 			<dd class="yc">订单状态</dd>
 			<dd class="yc">购帮助</dd>
+
 		</dl>
+		<ul>
+			<li>Mac</li>
+			<li>ipad</li>
+			<li>iphone</li>
+			<li>Watch</li>
+		</ul>
 		<dl class="dl">
 			<dt>教育应用
 
@@ -116,8 +129,14 @@
 			<dd class="yc">商务应用</dd>
 			<dd class="yc">Apple 与商务</dd>
 			<dd class="yc">商务选购</dd>
+
 		</dl>
-		
+		<ul>
+			<li>Mac</li>
+			<li>ipad</li>
+			<li>iphone</li>
+			<li>Watch</li>
+		</ul>
 		<dl class="dl">
 			<dt>账户
 
@@ -133,6 +152,12 @@
 			<dd class="yc">隐私</dd>
 			<dd class="yc">供应商责任</dd>
 		</dl>
+		<ul>
+			<li>Mac</li>
+			<li>ipad</li>
+			<li>iphone</li>
+			<li>Watch</li>
+		</ul>
 		<dl class="dl">
 			<dt>关于 Apple</dt>
 		
@@ -143,6 +168,13 @@
 			<dd class="yc">活动</dd>
 			<dd class="yc">联系 Apple</dd>
 		</dl>
+		<ul>
+			<li>Mac</li>
+			<li>ipad</li>
+			<li>iphone</li>
+			<li>Watch</li>
+		</ul>
+
 	</footer>
 	<!-- 底部结束 -->
 
@@ -190,5 +222,13 @@
         }
         // e.stop();
         headYC.slideUp();
+    })
+
+	let dt = $(".bfooter footer dl dt");
+	let ul = $("footer ul");
+    console.log(dt, ul);
+    dt.click(function () {
+        console.log(1);
+        $(this).parent().next().slideToggle();
     })
 </script>
